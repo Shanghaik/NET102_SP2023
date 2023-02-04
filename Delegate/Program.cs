@@ -90,7 +90,7 @@ namespace Delegate
             DieuTra(thanhTra);
             // Dùng trực tiếp hàm ở trong vẫn được và Delegate sẽ được tham chiếu ngầm đến hàm
             // DieuTra(KetHon);
-            //DieuTra(MayBay);
+            // DieuTra(MayBay);
             Console.ReadKey();
         }
     }
