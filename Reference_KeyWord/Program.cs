@@ -82,8 +82,8 @@ namespace _5_Reference_KeyWord
             // phương thức int.TryParse cho phép chúng ta nhập số
             // Nếu số đó là int thì out ra giá trị trả về true, nếu không thì out ra
             // 0 và trả về false
-            //bool kiemtra = int.TryParse(Console.ReadLine(), out k);
-            //Console.WriteLine(k);
+            bool kiemtra = int.TryParse(Console.ReadLine(), out k);
+            Console.WriteLine(k);
             // VIết lại TryParse với mô tả như sau
             // Có 2 tham số là string và out int z
             // Trả về 1 bool
