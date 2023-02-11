@@ -50,6 +50,8 @@ namespace Generics
             list.Show();
             list.Add("Mới");
             list.Show();
+            list.RemoveAt(2);
+            list.Show();
         }
     }
 }
