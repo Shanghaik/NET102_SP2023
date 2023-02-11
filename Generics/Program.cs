@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Text;
 
 namespace Generics
@@ -29,14 +30,26 @@ namespace Generics
         {
             Console.WriteLine($"Gia tri truyền vào là: {a}, {b}");
         }
+        static void HienThi<T>(T a) where T: struct
+        { // Từ khóa where giới hạn loại dữ liệu mà ta có thể dùng
+            Console.WriteLine($"Gia tri truyền vào là: {a}");
+        }
         static void Main(string[] args)
         {
             Console.InputEncoding = Encoding.Unicode;
             Console.OutputEncoding = Encoding.Unicode;
-            HienThi<int>(1, 2); // Cú pháp đầy đủ
-            //HienThi("abc", "xyz"); // Cú pháp không đầy đủ - Có thể gây lỗi
-            // HienThi<dynamic>(1, "abc"); // Cách này có thể dùng
-            HienThi<int, string>(10, "1234");
+            //HienThi<int>(1, 2); // Cú pháp đầy đủ
+            ////HienThi("abc", "xyz"); // Cú pháp không đầy đủ - Có thể gây lỗi
+            //// HienThi<dynamic>(1, "abc"); // Cách này có thể dùng
+            //HienThi<int, string>(10, "1234");
+            ////HienThi<string>("abcd"); // Báo lỗi vì string là class, không phải struct
+            //HienThi<double>(1.5);
+            // Generic Class
+            NewList<string> list = new NewList<string>();
+            list.Add("a"); list.Add("b"); list.Add("c"); list.Add("d");
+            list.Show();
+            list.Add("Mới");
+            list.Show();
         }
     }
 }
