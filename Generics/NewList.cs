@@ -44,8 +44,10 @@ namespace Generics
                 j++;
             }
             // Bước 3: Gán lại giá trị newdata cho data
-            data = newdata;
+            
         }
+        
+
         // Viết thêm các phương thức AddRange - thêm 1 loạt
         // Remove(T item) - xóa giá trị cụ thể
         // IndexOf(T item) - vị trí đầu tiên mà item xuất hiện

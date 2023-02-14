@@ -45,13 +45,15 @@ namespace Generics
             ////HienThi<string>("abcd"); // Báo lỗi vì string là class, không phải struct
             //HienThi<double>(1.5);
             // Generic Class
-            NewList<string> list = new NewList<string>();
-            list.Add("a"); list.Add("b"); list.Add("c"); list.Add("d");
-            list.Show();
-            list.Add("Mới");
-            list.Show();
-            list.RemoveAt(2);
-            list.Show();
+            //NewList<string> list = new NewList<string>();
+            //list.Add("a"); list.Add("b"); list.Add("c"); list.Add("d");
+            //list.Show();
+            //list.Add("Mới");
+            //list.Show();
+            //list.RemoveAt(2);
+            //list.Show();
+           
         }
+        
     }
 }
