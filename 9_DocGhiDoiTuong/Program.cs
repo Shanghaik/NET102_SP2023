@@ -22,10 +22,16 @@ namespace _9_DocGhiDoiTuong
             //    item.InThongTin();
             //}
             // Làm với file XML
-            DocGhiFileXml docGhiFileXml = new DocGhiFileXml();
-            //docGhiFileXml.GhiVaoFileXml<SanPham>("Sanpham.xml", sanPhams);
-            List<SanPham> sps = docGhiFileXml.DocTuFileXml<SanPham>("Sanpham.xml");
-            foreach (var item in sps)
+            //DocGhiFileXml docGhiFileXml = new DocGhiFileXml();
+            ////docGhiFileXml.GhiVaoFileXml<SanPham>("Sanpham.xml", sanPhams);
+            //List<SanPham> sps = docGhiFileXml.DocTuFileXml<SanPham>("Sanpham.xml");
+            //foreach (var item in sps)
+            //{
+            //    item.InThongTin();
+            //}
+            DocGhiFileBin.GhiVaoFileBin("Sanpham.bin", sanPhams);
+            List<SanPham> list = DocGhiFileBin.DocTuFileBin<SanPham>("Sanpham.bin");
+            foreach (var item in list)
             {
                 item.InThongTin();
             }
